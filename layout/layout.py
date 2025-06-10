@@ -59,7 +59,7 @@ def buscar_caminho():
         result_label.config(text="Não foi possível encontrar um caminho.")
     else:
         rota = " → ".join(caminho)
-        result_label.config(text=f"Caminho: {rota}\nCusto total: R$ {custo:.2f}")
+        result_label.config(text=f"Caminho de Menor Custo: {rota}\nCusto total: R$ {custo:.2f}")
 
 button = tk.Button(root, text="Buscar Caminho Mais Barato", command=buscar_caminho)
 button.pack(pady=20)
